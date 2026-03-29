@@ -1,0 +1,134 @@
+/* ===== GLOBAL ===== */
+body {
+  margin: 0;
+  padding: 0;
+  background: #0f172a;   /* dark background */
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== MAIN CONTENT ===== */
+.mainContent {
+  background: #0f172a;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* ❌ REMOVE ANY BLUR / TRANSPARENCY (VERY IMPORTANT) */
+* {
+  backdrop-filter: none !important;
+  filter: none !important;
+}
+
+/* ===== DASHBOARD TITLE ===== */
+.dashboard-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #22c55e;
+  margin-bottom: 20px;
+}
+
+/* ===== FORCE WHITE CARDS ===== */
+.ant-card {
+  background: #ffffff !important;   /* ✅ white */
+  color: #1e293b !important;        /* ✅ dark text */
+  border-radius: 12px !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 18px;
+  transition: transform 0.2s ease;
+}
+
+/* Hover effect */
+.ant-card:hover {
+  transform: translateY(-3px);
+}
+
+/* ===== FIX TEXT INSIDE CARDS ===== */
+.ant-card p,
+.ant-card h1,
+.ant-card h2,
+.ant-card h3,
+.ant-card span {
+  color: #1e293b !important;
+}
+
+/* ===== TOP DASHBOARD CARDS ===== */
+.dashboard-cards .ant-card {
+  background: #ffffff !important;
+  color: #1e293b !important;
+  opacity: 1 !important;
+}
+
+/* ===== ATTENDANCE COLORS ===== */
+.good {
+  color: #16a34a;
+  font-weight: bold;
+}
+
+.bad {
+  color: #dc2626;
+  font-weight: bold;
+}
+
+/* ===== BUTTONS ===== */
+.ant-btn-primary {
+  background: linear-gradient(45deg, #22c55e, #00c6ff) !important;
+  border: none !important;
+  color: white !important;
+}
+
+.ant-btn-primary:hover {
+  background: linear-gradient(45deg, #16a34a, #0284c7) !important;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  background: #020617;
+}
+
+/* ===== TABLE STYLING ===== */
+.custom-table {
+  width: 85%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: #ffffff;
+  color: #1e293b;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.custom-table th {
+  background: #f1f5f9;
+  padding: 12px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.custom-table td {
+  padding: 12px;
+  text-align: center;
+  font-size: 15px;
+  color: #1e293b;
+}
+
+.custom-table tr {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.custom-table tr:hover {
+  background: #f1f5f9;
+}
+
+/* ===== EDIT BUTTON ===== */
+.edit-btn {
+  background: #38bdf8;
+  border: none;
+  padding: 6px 12px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.edit-btn:hover {
+  background: #0284c7;
+}

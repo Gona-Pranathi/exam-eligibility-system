@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* DARK MODE */
+.dark {
+  background: #0f172a;
+  color: white;
+}
+
+/* LIGHT MODE */
+.light {
+  background: #f1f5f9;
+  color: black;
+}
+
+/* LAYOUT */
+.app {
+  display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 230px;
+  height: 100vh;
+  background: #020617;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+}
+
+.sidebar a {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  color: #94a3b8;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.sidebar a:hover {
+  background: #1e293b;
+  color: white;
+}
+
+.sidebar .active {
+  background: linear-gradient(45deg, #22c55e, #00c6ff);
+  color: white;
+}
+
+/* MAIN */
+.main {
+  flex: 1;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #020617;
+  padding: 15px;
+  border-bottom: 1px solid #1e293b;
+}
+
+/* CONTENT */
+.content {
+  padding: 25px;
+}
+
+/* CARDS */
+.ant-card {
+  border-radius: 15px !important;
+  transition: 0.3s;
+}
+
+.ant-card:hover {
+  transform: translateY(-5px);
+}
+
+/* BUTTON */
+button {
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}

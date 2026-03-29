@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* FULL SCREEN BACKGROUND */
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  background-size: 400% 400%;
+  animation: gradientMove 8s ease infinite;
+}
+
+/* ANIMATION */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* CARD */
+.login-card {
+  width: 360px;
+  padding: 40px;
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+/* TITLE */
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+}
+
+/* SUBTITLE */
+.subtitle {
+  color: #cbd5f5;
+}
+
+/* BUTTON */
+.login-btn {
+  background: linear-gradient(45deg, #22c55e, #00c6ff);
+  border: none;
+}
+
+.login-btn:hover {
+  transform: scale(1.05);
+}
