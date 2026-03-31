@@ -15,7 +15,7 @@ public class HallTicket {
 
     private String department;
 
-    private int semester;
+    private Integer semester;
 
     private String hallTicketNumber;
 
@@ -37,7 +37,7 @@ public class HallTicket {
         return department;
     }
 
-    public int getSemester() {
+    public Integer getSemester() {
         return semester;
     }
 
@@ -65,7 +65,7 @@ public class HallTicket {
         this.department = department;
     }
 
-    public void setSemester(int semester) {
+    public void setSemester(Integer semester) {
         this.semester = semester;
     }
 
